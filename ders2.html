@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DERS 2</h1>
+
+    <h2 id="baslik">9. Gün</h2>
+
+    <p class="paragraf">paragraflar</p>
+    <p class="paragraf">paragraflar</p>
+    <p class="paragraf">paragraflar</p>
+    <p class="paragraf">paragraflar</p>
+    <p class="paragraf">paragraflar</p>
+
+
+    <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="ders1.html">Ders 1</a></li>
+        <li><a href="ders2.html" id="ders2">Ders 2</a></li>
+        <li><a href="ders3.html">Ders 3</a></li>
+        <li><a href="ders4.html">Ders 4</a></li>
+        <li><a href="ders5.html">Ders 5</a></li>
+        <li><a href="ders6.html" id="ders6">Ders 6</a></li>
+    </ul>
+
+    <script>
+
+        var baslik = document.getElementById("baslik");
+        var paragraflar = document.querySelectorAll("p.paragraf");
+        var ders2link = document.getElementById("ders2");
+        var ders6link = document.getElementById("ders6");
+
+        baslik.addEventListener("click" , fonksiyon)
+        ders2link.addEventListener("mouseover" , mouseoverr);
+        ders6link.addEventListener("mouseover", allah);
+
+        function fonksiyon(){
+            paragraflar[3].style.color = "blue";
+        }
+
+        function mouseoverr(){
+            paragraflar[2].style.backgroundColor = "red"
+            alert("Özgür baba sana nolmuş")
+
+        }
+
+        function allah(){
+
+            alert("Allahım sana inanmayan kafirdir");
+        }
+
+
+
+    </script>
+
+</body>
+</html>

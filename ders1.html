@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ders 1</h1>
+
+    <h3 class="a"></h3>
+    <h3 class="a"></h3>
+
+    <h3 class="b"></h3>
+    <h3 class="b"></h3>
+
+    <p class="a"></p>
+    <p class="a"></p>
+    <p class="a"></p>
+    <p class="a"></p>
+    <p class="a"></p>
+
+    <ul>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="ders1.html">Ders 1</a></li>
+      <li><a href="ders2.html">Ders 2</a></li>
+      <li><a href="ders3.html">Ders 3</a></li>
+      <li><a href="ders4.html">Ders 4</a></li>
+      <li><a href="ders5.html">Ders 5</a></li>
+      <li><a href="ders6.html">Ders 6</a></li>
+    </ul>
+
+    <script>
+      var ulkeElemanlari = ["Almanya" , "Fransa" , "Afrika" , "Japonya" , "Türkiye"]
+      var aClassOlanlar = document.getElementsByClassName("a");
+      var h3ClassA = document.querySelectorAll("h3.a");
+      var h3ClassB = document.querySelectorAll("h3.b");
+      
+      for(i = 2 ; i < aClassOlanlar.length + 2 ; i++){
+        aClassOlanlar[i].innerHTML = ulkeElemanlari[i - 2];
+      }
+      
+      h3ClassB[0].innerHTML = ulkeElemanlari[3];
+      h3ClassB[1].innerHTML = ulkeElemanlari[4];
+
+      h3ClassA[0].innerHTML = "Özgür baba";
+      h3ClassA[1].innerHTML = "Sana nolmuş";
+     
+    </script>
+  </body>
+</html>

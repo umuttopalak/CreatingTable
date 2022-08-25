@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+        body {
+            background-color:rgb(40, 48, 48);
+        }
+        
+        #isim {
+            font-style: italic;
+            color: brown;
+            border: 2px solid red;
+            background-color: rgb(196, 195, 144);
+            border-radius: 25px;
+            font-size: 20px;
+        }
+
+        #okul {
+            font-style: italic;
+            color: green;
+            border: 2px solid green;
+            background-color: rgb(210, 136, 212);
+            border-radius: 25px;
+            font-size: 20px;
+        }
+
+        #yas {
+            font-style: italic;
+            color: darkorchid;
+            border: 2px solid darkorchid;
+            background-color: rgb(145, 211, 143);
+            border-radius: 25px;
+            font-size: 20px;
+        }
+
+        #mail {
+            font-style: italic;
+            color: yellow;
+            border: 2px solid yellow;
+            background-color: rgb(71, 59, 59);
+            border-radius: 25px;
+            font-size: 20px;
+        }
+
+        #paragraf{
+            color: cadetblue;
+            font-size: 25px;
+            
+        }
+
+        button{
+            border-radius: 15px;
+            background-color: darkgrey;
+            font-size: 20px;
+            width: 35%;
+        }
+
+        input{
+            width: 75%;
+        }
+    </style>
+  </head>
+  <body>
+    <br>
+    <div id="container ">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+      >
+        
+          <svg
+            class="bi me-2"
+            width="40"
+            height="32"
+            role="img"
+            aria-label="Bootstrap"
+          >
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li>
+            <a href="index.html" class="nav-link px-2 link-secondary"
+              >AnaSayfa</a
+            >
+          </li>
+          <li>
+            <a href="ders1.html" class="nav-link px-2 link-dark">Ders1</a>
+          </li>
+          <li>
+            <a href="ders2.html" class="nav-link px-2 link-dark">Ders2</a>
+          </li>
+          <li>
+            <a href="ders3.html" class="nav-link px-2 link-dark">Ders3</a>
+          </li>
+          <li>
+            <a href="ders4.html" class="nav-link px-2 link-dark">Ders4</a>
+          </li>
+          <li>
+            <a href="ders5.html" class="nav-link px-2 link-dark">Ders5</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12 text-center w-25 p-3" id="inputDiv">
+          <input type="text" placeholder="  İsminiz" id="isim" />
+          <br /><br />
+          <input type="text" placeholder="  Okulunuz" id="okul" />
+          <br /><br />
+          <input type="text" placeholder="  Yaşınız" id="yas" />
+          <br /><br />
+          <input type="text" placeholder="  Mail adresiniz" id="mail" />
+          <br /><br />
+          <button type="button" onclick="kaydet()">Kaydet</button>
+        </div>
+
+        <div class="col-lg-9 col-md-12 col-sm-12" id="tabloDiv">
+          <p id="paragraf" class="text-left">Bilgileriniz burada gözükecektir!</p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <script src="java.js"></script>
+  </body>
+</html>

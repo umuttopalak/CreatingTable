@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DERS 4</h1>
+
+
+    <h1>Node Eklemek</h1>
+
+    <div id="div1">
+
+        <p id="p1">PARAGRAF 1</p>
+        <p id="p2">PARAGRAF 2</p>
+    
+    </div>
+    <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="ders1.html">Ders 1</a></li>
+        <li><a href="ders2.html">Ders 2</a></li>
+        <li><a href="ders3.html">Ders 3</a></li>
+        <li><a href="ders4.html">Ders 4</a></li>
+        <li><a href="ders5.html">Ders 5</a></li>
+        <li><a href="ders6.html">Ders 6</a></li>
+    </ul>
+
+    <script>
+
+        var baslik = document.createElement("h3");
+        var node = document.createTextNode("Merhaba ben Umut Topalak");
+        console.log(node)
+        baslik.appendChild(node);
+
+        var div1 = document.getElementById("div1");
+        var p2 = document.getElementById("p2");
+        var p1 = document.getElementById("p1");
+        
+        
+        div1.insertBefore(baslik , p2);
+        div1.removeChild(p2);
+        div1.replaceChild(baslik , p1)
+    
+        
+    </script>
+</body>
+</html>
